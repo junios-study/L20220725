@@ -20,17 +20,6 @@ Player::~Player()
 	cout << "Player Destructor" << endl;
 }
 
-void Player::Move()
-{
-	cout << "Player Move" << endl;
-}
-
-void Player::Attack()
-{
-	cout << "Player Attack" << endl;
-}
-
-
 int Player::GetGold()
 {
 	return Gold;
@@ -42,4 +31,8 @@ void Player::SetGold(int NewGold)
 		return;
 
 	Gold = NewGold;
+}
+
+void Player::RealMove()
+{
 }
