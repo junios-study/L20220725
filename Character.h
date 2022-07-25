@@ -1,9 +1,11 @@
 #pragma once
+#include <string>
+
 class Character
 {
 public:
 	Character();
-	~Character();
+	virtual ~Character();
 
 protected: //인터페이스 비공개, 상속 가능
 	int HP;
@@ -11,8 +13,12 @@ protected: //인터페이스 비공개, 상속 가능
 	int	X;
 	int	Y;
 
+	std::string name;
+
+
 public:
-	void Move();
+	virtual void Move();
 	void Attack();
+
 };
 

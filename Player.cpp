@@ -11,6 +11,8 @@ Player::Player()
 	Y = 10;
 	Gold = 0;
 
+	name = "Player";
+
 	printf("Player Constructor\n");
 }
 
@@ -31,6 +33,12 @@ void Player::SetGold(int NewGold)
 		return;
 
 	Gold = NewGold;
+}
+
+void Player::Move()
+{
+	cout << "Player is Run" << endl;
+	Character::Move();
 }
 
 void Player::RealMove()

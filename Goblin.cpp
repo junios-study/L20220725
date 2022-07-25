@@ -2,6 +2,7 @@
 
 Goblin::Goblin()
 {
+	name = "Goblin";
 }
 
 Goblin::~Goblin()
